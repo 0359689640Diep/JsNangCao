@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <nav>
+        <p class="welcome">Log in to get started</p>
+        <!-- <img class="logo" src="logo.png" alt="Logo"> -->
+        <form action="" class="login">
+            <input placeholder="user" type="text" class="login__input--user">
+            <input placeholder="PIN" maxlength="4" type="text" class="login__input--user">
+            <button class="login_btn">&rarr;</button>
+        </form>
+    </nav>
+    <main class="app">
+        <div class="balance">
+            <div class="balance_container">
+                <div class="balance_item">
+                    <p class="balance_label">Current balance</p>
+                    <p class="balance_date">As of<span class="date">05/03/2037</span></p>
+                </div>
+                    
+                <p class="balance_value">0000$</p>
+            </div>
+            <div class="balance_movements">
+                <div class="movements">
+                    <!-- <div class="movements__row">
+                        <div class="movements__type movements__type--deposit">2 deposit</div>
+                        <div class="movements__date">3 days ago</div>
+                        <div class="movements__value">4 000$</div>
+                    </div>
+                    <div class="movements__row">
+                        <div class="movements__type movements__type--withdraw">2 withdraw</div>
+                        <div class="movements__date">3 days ago</div>
+                        <div class="movements__value">4 000$</div>
+                    </div> -->
+                </div>
+                <div class="summary">
+                    <div class="summary_item">
+                        <div class="item_title">
+                            <h1>Transfer money</h1>
+                        </div>
+                        <div class="item_content">
+                            <div class="item">
+                                <input type="text">
+                                <p>Transfer to</p>
+                            </div>
+                            <div class="item">
+                                <input type="number">
+                                <p>Amount</p>
+                            </div>
+                            <div class="item">
+                                <button>Xác nhận</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary_item">
+                        <div class="item_title">
+                            <h3>Request loan</h3>
+                        </div>
+                        <div class="item_content">
+                            <div class="item">
+                                <input type="number">
+                                <p>Amount</p>
+                            </div>
+                            <div class="item">
+                                <button>Xác nhận</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary_item">
+                        <div class="item_title">
+                            <h3>Close account</h3>
+                        </div>
+                        <div class="item_content">
+                            <div class="item">
+                                <input type="text">
+                                <p>Confirm user</p>
+                            </div>
+                            <div class="item">
+                                <input type="number">
+                                <p>Confirm PIN</p>
+                            </div>
+                            <div class="item">
+                                <button>Xác nhận</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
-<script src="./CodingChallenge4.js"></script>
+<script src="./bankistApp.js"></script>
 </html>
